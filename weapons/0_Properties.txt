@@ -1,0 +1,17 @@
+The properties are:
+
+- Primary Color;
+- Damage;
+- Range;
+- Material (Wood - Bronze, Bone - Prata, Flint - Ouro, Obsidian - Diamante);
+- Elements (Aid, Earth, Fire, Water) [these will only be shown in the game interface];
+
+And that's the logic of Damage and Range to show the right weapons:
+
+Sniper images = Range above 50% of it's Max value + Damage above 50% of it's Max value;
+
+Shotgun images = Range below 50% of it's Max value + Damage above 50% of it's Max value;
+
+AssaultRifle images = Range above 50% of it's Max value + Damage below 50% of it's Max value;
+
+Sniper images = Range below 50% of it's Max value + Damage below 50% of it's Max value;

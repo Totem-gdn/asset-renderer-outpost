@@ -1,1 +1,1 @@
-# asset-renderer-outpost
+# asset-renderer-outposts

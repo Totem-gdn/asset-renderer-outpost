@@ -9,8 +9,6 @@ class NFTController {
       res.status(404).json({ error: 'Wrong format' })
     }
     const nft = await nftHelper.get(type, id);
-    console.log('nfft', nft);
-
     if (nft && (type === 'avatar' || type === 'item')) {
       if (nft.primary_color) {
         nft.primaryShadow = nft.primary_color.replace(')', ', 0.5)').replace('rgb', 'rgba');

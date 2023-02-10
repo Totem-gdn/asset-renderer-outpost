@@ -3,7 +3,14 @@
 
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="{{width}}" height="{{height}}" viewBox="0 0 1300 400">
-<g style="filter: drop-shadow(0px 0px 150px {{primaryShadow}});" transform="translate(-320 -350)">
+
+
+    {{#ifeq glow 'true'}}
+      <g style="filter: drop-shadow(0px 0px 150px {{primaryShadow}});" transform="translate(-320 -350)">
+    {{/ifeq}}
+    {{#ifeq glow 'false'}}
+      <g transform="translate(-320 -350)">
+    {{/ifeq}}
     <style>
         .mask {
             mix-blend-mode: overlay;
